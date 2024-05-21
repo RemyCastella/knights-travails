@@ -1,0 +1,10 @@
+1. You cannot compare arrays. Therefore, you need to either compare the elements inside arrays separately (eg. array1[0] === array2[0])
+or you must convert the arrays into a string then compare the strings (eg. array1.toString() === array2.toString())
+
+2. You cannot return/exit out of forEach loops. Use for of loops instead if you need to return once a criteria is met.
+forEach is for if you want to apply something to every item in an array no matter what.
+
+3. Array inside template literal gets converted into a string (ugh). Using JSON.stringify allows you to keep the array format in the string.
+
+4. You MUST MUST MUST return the recursive function!! Not doing this resulted in a mysterious infinite loop that chatGPT was totally useless
+(actually super harmful because it was misleading) in helping me with.

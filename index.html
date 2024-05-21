@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimum Knight Moves</title>
+    <script src="./index.js" defer></script>
+    <style>
+      body {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        overflow: hidden;
+      }
+
+      .main {
+        width: 50%;
+        font-size: 5rem;
+        margin-bottom: 3rem;
+      }
+
+      .sub {
+        width: 50%;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      form {
+        width: 50%;
+      }
+
+      label,
+      input {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border-style: dashed;
+        border-color: rgba(0, 0, 0, 0.267);
+        cursor: pointer;
+        transition: 50ms;
+      }
+
+      button:hover {
+        transform: scale(1.02);
+      }
+
+      .result {
+        margin-top: 3rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .result-display {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">Knights Travails</div>
+    <div class="sub">
+      Find the minimum moves and path a knight chess piece can take between two
+      positions on an 8x8 chess board (inputs must be between [0,0] and [7,7])
+    </div>
+    <form>
+      <div class="start">
+        <label for="start">Start => </label>
+        <input type="text" id="start" placeholder="[3,3]" />
+      </div>
+      <div class="end">
+        <label for="end">End => </label>
+        <input type="text" id="end" placeholder="[7,5]" />
+      </div>
+      <button>Find Path!</button>
+    </form>
+    <div class="result"></div>
+  </body>
+</html>
